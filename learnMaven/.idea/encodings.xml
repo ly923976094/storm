@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="jar://$MAVEN_REPOSITORY$/com/alibaba/jstorm/jstorm-core/2.1.1/jstorm-core-2.1.1-sources.jar!/com/alibaba/jstorm/task/execute/spout/SpoutBatchCollector.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ackfail/MySpout.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/stream/bolt/SaveDataBolt.java" charset="UTF-8" />
+  </component>
+</project>
