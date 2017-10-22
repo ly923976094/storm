@@ -21,7 +21,7 @@ public class KafkaProducerSimple {
         /**
          * 1、指定当前kafka producer生产的数据的目的地
          *  创建topic可以输入以下命令，在kafka集群的任一节点进行创建。
-         *  bin/kafka-topics.sh --create --zookeeper zk01:2181 --replication-factor 1 --partitions 1 --topic test
+         *  bin/kafka-topics.sh --create --zookeeper zk01:2181 --replication-factor 1 --partitions 1 --topic orderMq
          */
         String TOPIC = "orderMq";
         /**
@@ -76,6 +76,7 @@ public class KafkaProducerSimple {
              * 5、调用producer的send方法发送数据
              * 注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发
              */
+//            producer.send(new KeyedMessage<String, String>(TOPIC, messageNo + "", "appid" + UUID.randomUUID() + messageStr));
             producer.send(new KeyedMessage<String, String>(TOPIC, messageNo + "", "appid" + UUID.randomUUID() + "itcast"));
         }
     }
