@@ -45,7 +45,7 @@ public class KafkaConsumerSimple implements Runnable {
     public static void main(String[] args) throws Exception{
         Properties props = new Properties();
         props.put("group.id", "dashujujiagoushi");
-        props.put("zookeeper.connect", "master:2181,slave1:2181,slave2:2181");
+        props.put("zookeeper.connect", "miniMaster1:2181,miniMaster2:2181,miniMaster3:2181");
         props.put("auto.offset.reset", "largest");
         props.put("auto.commit.interval.ms", "1000");
         props.put("partition.assignment.strategy", "roundrobin");

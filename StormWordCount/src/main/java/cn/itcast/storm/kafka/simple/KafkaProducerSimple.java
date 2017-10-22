@@ -35,7 +35,7 @@ public class KafkaProducerSimple {
         /*
 		 * kafka broker对应的主机，格式为host1:port1,host2:port2
 		 */
-        props.put("metadata.broker.list", "master:9092,slave1:9092,slave2:9092");
+        props.put("metadata.broker.list", "miniMaster1:9092,miniMaster2:9092,miniMaster3:9092");
         /*
          * request.required.acks,设置发送数据是否需要服务端的反馈,有三个值0,1,-1
 		 * 0，意味着producer永远不会等待一个来自broker的ack，这就是0.7版本的行为。
